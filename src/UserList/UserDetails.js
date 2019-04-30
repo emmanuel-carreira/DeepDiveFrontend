@@ -32,12 +32,13 @@ const UserDetails = ({ user }) => {
 
     }, [])
   
-  if(loading){
+  //While loading
+  if(loading == true){
 
     return <Loading />
   }
 
-  //Se nao tiver repositorio
+  //If there is no repository from the user
   if (searchRepo.length == 0){
     return <div>No repos found</div>
   }
